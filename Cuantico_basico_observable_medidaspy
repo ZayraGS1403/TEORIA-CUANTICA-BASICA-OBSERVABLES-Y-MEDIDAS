@@ -2,6 +2,7 @@
 import Lib2matrces as lib
 import math
 import numpy as np
+import cuantico as cc
 def mod_cuadrado(c):
     return round(c.real * 2 + c.imag * 2, 2)
 
@@ -107,9 +108,30 @@ def final(seq, ket):
         return estado
     else:
         return "No son unitarias algunas de las matrices."
+    
+#Ejercicios capitulo 4
+# 4.3.1
+print(vect_prop([[0, 1], [1, 0]]))
 
+# 4.3.2
+print(transitar_vect_prop([[0, 1], [1, 0]], [0, 1]))
+print(val_prop([[0, 1], [1, 0]]))
+print(media([[0, 1], [1, 0]], [0, 1]))
 
+# 4.4.1
+V1 = [[0, 1], [1, 0]]
+v2 = (2 ** (1 / 2)) / 2
+v3 = [[v2, v2], [v2, -v2]]
+producto = lib.productoma(V1, v3)
+print(lib.unitario(V1))
+print(lib.unitario(v3))
+print(lib.unitario(producto))
 
-
-
-
+# 4.4.2
+v2 = 1 / math.sqrt(2)
+P1 = [[0, v2, v2, 0, ], [1j * v2, 0, 0, v2], [v2, 0, 0, 1j * v2], [0, v2, -v2, 0]]
+P2 = [[0, v2, v2, 0, ], [v2, 0, 0, -v2], [v2, 0, 0, v2], [0, -v2, v2, 0]]
+state = cc.complex(P1, [1, 0, 0, 0], 3)
+state1 = cc.calculo(P2, [1, 0, 0, 0], 3)
+print(state)
+print(state1)
