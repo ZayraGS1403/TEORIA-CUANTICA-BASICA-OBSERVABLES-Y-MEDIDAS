@@ -18,5 +18,7 @@ En el segundo avance se encuentra los rtos de programación:
 
 # El desarrollo de los ejercicios 4.5.2 y 4.5.3
 ## Nota.
-se utilizaron funciones ya realizadas con anterioridad y dos ejemplos para cada función.
-### de cada libreria se encuentran sus tests 
+1. El archivo que contiene lo pedido es final.py
+2. se utilizaron funciones ya realizadas con anterioridad y dos ejemplos para cada función en test_observable.py
+3. Cada libreria se encuentran sus tests
+4. los ejercicios se encuentran en ejercicios.pdf
