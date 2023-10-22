@@ -11,10 +11,10 @@ En el segundo avance se encuentra los rtos de programación:
 ## Se considera la dinámica del sistema. Ahora con una serie de matrices Un el sistema calcula el estado final a partir de un estado inicial.
 
 # Simulacion de los puntos del capitulo 4
-### 4.3.1
-### 4.3.2
-### 4.4.1
-### 4.4.2
+4.3.1
+4.3.2
+4.4.1
+4.4.2
 
 # El desarrollo de los ejercicios 4.5.2 y 4.5.3
 ## Nota.
